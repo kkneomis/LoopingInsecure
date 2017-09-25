@@ -18,13 +18,16 @@ public class Home {
             System.out.println("Do you want to play (Y/N)");
             // Then we will get the user's output
             String answer = keyboard.next();
-            System.out.println("Answer is " + answer);
+
             if (answer.equals("N")){
+                // If the user says no, we set our variable to 1 and end the loop
                 System.out.println("I'm sorry to hear that. Have a good day.");
                 play = 1;
             } else if (answer.equals("Y")){
+                // If the user says yes, we play the game
                 play();
             } else {
+                // If the user inputs neither, our play variable remains 0, so we ask again.
                 System.out.println("Sorry, that's not an option");
             }
 
